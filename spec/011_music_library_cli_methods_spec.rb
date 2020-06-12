@@ -31,8 +31,9 @@ describe "MusicLibraryController - CLI Methods" do
       expect($stdout).to receive(:puts).with("2. Jurassic 5")
       expect($stdout).to receive(:puts).with("3. Real Estate")
       expect($stdout).to receive(:puts).with("4. Thundercat")
-
+      
       music_library_controller.list_artists
+
     end
 
     it "is not hard-coded" do
